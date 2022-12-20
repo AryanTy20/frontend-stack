@@ -1,0 +1,48 @@
+.forms-concept {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5em;
+  gap: 2em;
+
+  .controll-form,
+  .uncontroll-form {
+    box-shadow: 0 0 100px 0 rgba(black, 0.2);
+    h1 {
+      text-align: center;
+      margin: 1em 0;
+    }
+    padding: 2em 3em;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    min-width: 20em;
+    input {
+      padding: 0.3em;
+    }
+
+    button {
+      margin: 0.5em 0;
+      padding: 0.5em;
+      border: solid black 1px;
+      outline: none;
+      border-radius: 0.2em;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .forms-concept {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin-inline: auto;
+    .box {
+      min-width: 100% !important;
+    }
+  }
+}
